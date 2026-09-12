@@ -1,5 +1,7 @@
-package org.alone.springsecurity;
+package org.alone.springsecurity.Service;
 
+import org.alone.springsecurity.Entity.Student;
+import org.alone.springsecurity.Repository.StudentRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

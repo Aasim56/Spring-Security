@@ -1,6 +1,8 @@
-package org.alone.springsecurity;
+package org.alone.springsecurity.Controller;
 
 import jakarta.servlet.http.HttpServletRequest;
+import org.alone.springsecurity.Entity.Student;
+import org.alone.springsecurity.Service.StudentService;
 import org.springframework.security.web.csrf.CsrfToken;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -33,4 +35,11 @@ public class StudentController {
     public CsrfToken getCsrfToken(HttpServletRequest request){
         return (CsrfToken) request.getAttribute("_csrf");
     }
+
+    @GetMapping("/greet")
+    public String greet(){
+        return " Welcome to Spring Security";
+    }
+
 }
+

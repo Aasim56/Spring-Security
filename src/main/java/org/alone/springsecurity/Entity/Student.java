@@ -1,6 +1,5 @@
-package org.alone.springsecurity;
+package org.alone.springsecurity.Entity;
 
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
